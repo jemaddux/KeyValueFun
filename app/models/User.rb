@@ -23,5 +23,6 @@ class User
     PROPERTIES.each { |prop|
       encoder.encodeObject(self.send(prop), forKey: prop.to_s)
     }
+  end
 end
 
